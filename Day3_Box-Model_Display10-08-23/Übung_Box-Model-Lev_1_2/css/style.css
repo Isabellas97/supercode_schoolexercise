@@ -1,0 +1,13 @@
+div {
+  background-color: white;
+  border: 1px solid black;
+  padding: 35px;
+  margin: 5px;
+}
+
+div p {
+  background-color: aquamarine;
+  border: 5px solid black;
+  padding: 35px;
+  margin: 5px;
+}

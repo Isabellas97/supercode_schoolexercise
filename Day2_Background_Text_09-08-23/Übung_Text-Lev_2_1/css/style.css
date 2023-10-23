@@ -1,0 +1,36 @@
+h1 {
+  text-align: center;
+  color: antiquewhite;
+  background-color: rgb(118, 118, 207);
+  font-size: 48px;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 2);
+  font-family: tahoma;
+}
+
+p:first-of-type {
+  word-spacing: 10px;
+  text-indent: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+p:nth-of-type(2) {
+  text-indent: 40px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+h2 {
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 2);
+  letter-spacing: 10px;
+}
+
+p:nth-of-type(3) {
+  line-height: 50px;
+  background-color: blueviolet;
+}
+
+p:nth-of-type(4) {
+  line-height: 20px;
+  background-color: aquamarine;
+}

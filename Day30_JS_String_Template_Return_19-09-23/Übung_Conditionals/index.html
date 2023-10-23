@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String Methoden</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <style>
+      .style {
+        margin: auto;
+        width: 220px;
+        padding: 20px;
+        background-color: #999;
+        font-family: Geneva, Tahoma, sans-serif;
+        border-radius: 5px;
+      }
+
+      button {
+        background: #333;
+        color: white;
+        border-radius: 5px;
+        padding: 5px;
+      }
+
+      input {
+        border-radius: 5px;
+        padding: 5px;
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <form onsubmit="return false" action="#">
+      <input type="number" placeholder="Age" id="age" />
+      <button onclick="adult()">Check</button>
+    </form>
+
+    <p>Du bist:</p>
+    <p id="output"></p>
+
+    <br />
+    <br />
+    <h2>Passwortüberfüfung</h2>
+    <form onsubmit="return false" action="#">
+      <label for="password">Passwort</label>
+      <input type="text" id="password" />
+
+      <button onclick="saftyPass()">Save</button>
+      <p id="passState"></p>
+    </form>
+
+    <br />
+    <br />
+    <!-- ! Übung 2.5 -->
+
+    <div class="style">
+      <input
+        id="bundeslandInfo"
+        type="text"
+        placeholder="Schreibe Bundesland"
+      />
+      <input type="button" value="Check" onclick="check()" />
+      <div id="bundeslandInfoErgebnis"></div>
+    </div>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

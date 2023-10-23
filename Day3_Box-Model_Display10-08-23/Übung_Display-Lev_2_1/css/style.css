@@ -1,0 +1,12 @@
+article {
+  display: inline-block;
+  height: 120px;
+  width: 300px;
+  border: 2px solid black;
+  margin: 20px 20px;
+  padding: 30px 40px 30px 10px;
+}
+
+article ul li {
+  list-style: none;
+}

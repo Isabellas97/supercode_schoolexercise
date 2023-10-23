@@ -1,0 +1,264 @@
+@font-face {
+  font-family: Cormo;
+  src: url(../font/CormorantGaramond-Regular.ttf);
+}
+
+@font-face {
+  font-family: CormoThin;
+  src: url(../font/CormorantGaramond-Light.ttf);
+}
+
+@font-face {
+  font-family: CormoThinItalic;
+  src: url(../font/CormorantGaramond-LightItalic.ttf);
+}
+
+@font-face {
+  font-family: CormoBold;
+  src: url(../font/CormorantGaramond-Bold.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* - Font Size --------------- */
+
+h1,
+h2,
+h3,
+h4,
+p,
+a {
+  font-family: Cormo;
+  color: #333333;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+  font-family: CormoBold;
+}
+
+p {
+  font-size: 1rem;
+  font-family: CormoThin;
+}
+
+.description {
+  font-family: CormoThinItalic;
+}
+
+a {
+  font-size: 1.2rem;
+  color: #737b80;
+}
+
+/* - Body Hintergrund ------- */
+
+body {
+  background-color: #e9e9e0;
+}
+
+/* - Header-Bereich ---------- */
+
+header {
+  width: 100vw;
+  margin-bottom: 3vh;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 1vh;
+  margin: 3vh;
+}
+
+h1::first-letter {
+  font-size: 3.2rem;
+}
+
+h1 span {
+  font-size: 3.2rem;
+}
+
+header div {
+  display: flex;
+  justify-content: space-around;
+  border-top: 6px double black;
+  border-bottom: 6px double black;
+  padding: 1.2vh;
+  margin: 0 4vw;
+}
+
+/* - der Newspaper besteht aus 2 Grids die nebeneinander positioniert sind in einem übergeordnetem Grid*/
+
+.newspaper {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  gap: 0;
+  margin: 0 4vw;
+  margin-bottom: 5vh;
+}
+
+.content {
+  grid-column: 1 / 2;
+}
+
+.Werbung {
+  grid-column: 2 / 3;
+}
+
+/* - Content-Bereich = 1. Grid hat 3 Columns (besteht aus Article und Bild*/
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  gap: 3vh 1vw;
+}
+
+h2 {
+  text-align: center;
+  grid-column: 1 / -1;
+  margin-bottom: 1vh;
+}
+
+.Küchenbild {
+  grid-column: 3 / 4;
+  grid-row: 2 / 5;
+  margin-right: 2.5vw;
+}
+
+.Küchenbild img {
+  width: 100%;
+  height: auto;
+}
+
+/* - Werbung-Bereich = 1. Grid hat 1 Col (betseht aus 1 H4 und 3 boxen untereinander) */
+
+.WerbungGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+h4 {
+  text-align: center;
+}
+
+.cta {
+  font-size: 3rem;
+  font-family: CormoBold;
+}
+
+.border {
+  border: 6px double black;
+  margin-top: 3vh;
+  text-align: center;
+  padding: 3.5vh 2vw;
+  align-self: self-end;
+}
+
+@media only screen and (max-width: 992px) {
+  .newspaper {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .content {
+    grid-column: 1 / 2;
+  }
+
+  .Werbung {
+    grid-column: 1 / 2;
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3vh 4vw;
+    margin-bottom: 7vh;
+  }
+
+  h2 {
+    padding: 0 10vw;
+  }
+
+  .Küchenbild {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    padding: 0 15vw;
+  }
+
+  .WerbungGrid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4vw;
+  }
+
+  .border {
+    height: 30vh;
+    padding: 2.5vh 2vw;
+  }
+  .border2 p {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  header p {
+    font-size: 0.9rem;
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 7vh;
+    text-align: center;
+  }
+
+  .Küchenbild {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    padding: 0 15vw;
+  }
+
+  .content p {
+    padding: 0 10vw;
+  }
+
+  .Küchenbild {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    padding: 0 15vw;
+  }
+
+  .WerbungGrid {
+    grid-template-columns: 1fr;
+    gap: 2vw;
+  }
+
+  .border {
+    height: 30vh;
+    padding: 2.5vh 2vw;
+    margin: 0 25vw;
+  }
+  .border2 p {
+    font-size: 0.8rem;
+  }
+
+  .Werbung h4 {
+    margin-bottom: 3vh;
+  }
+}

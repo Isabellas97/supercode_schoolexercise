@@ -1,0 +1,61 @@
+ul {
+  text-decoration: none;
+}
+
+h1::first-letter {
+  color: #00796b;
+  font-size: 3em;
+}
+
+.done-task {
+  text-decoration: line-through;
+}
+
+.ongoing-task {
+  background-color: lightblue;
+}
+
+.future-task {
+  text-decoration: underline;
+}
+
+h1:hover::first-letter {
+  color: #4fc3f7;
+}
+ul {
+  list-style: none;
+}
+
+.done-task::before {
+  content: "✅";
+}
+
+.ongoing-task::before {
+  content: "📌 ";
+}
+
+.future-task::before {
+  content: "❌ ";
+}
+
+.gym::after {
+  content: " 💪";
+}
+.bills::after {
+  content: " 💰";
+}
+
+.meet::after {
+  content: " 😎";
+}
+.buy::after {
+  content: " 🥚";
+}
+
+.read::after {
+  content: " 📕";
+}
+
+.office::after {
+  content: " 🖥️";
+}

@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  height: 150px;
+  width: 150px;
+  margin: 50px;
+
+  background-color: #9bc1bc;
+  outline: #546a7b solid 5px;
+  border: 25px solid #f4f1bb;
+  box-shadow: 1px 1px 0px 25px #ed6a5a;
+}
+
+ul {
+  list-style: none;
+  margin: 25px;
+}
+
+li:nth-of-type(4):before {
+  content: "\25b6";
+  color: #ed6a5a;
+}
+
+li:nth-of-type(3):before {
+  content: "\25b6";
+  color: #546a7b;
+}
+
+li:nth-of-type(2):before {
+  content: "\25b6";
+  color: #f4f1bb;
+}
+
+li:nth-of-type(1):before {
+  content: "\25b6";
+  color: #9bc1bc;
+}

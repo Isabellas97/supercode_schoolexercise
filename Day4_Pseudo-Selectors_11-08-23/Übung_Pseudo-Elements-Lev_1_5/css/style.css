@@ -1,0 +1,53 @@
+div {
+  width: 400px;
+  height: 120px;
+  margin: 100px 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  position: relative;
+}
+
+div p::first-letter {
+  font-size: 24px;
+}
+
+.Rucksack {
+  border-bottom: 1px solid black;
+}
+
+.Fahrrad {
+  border-bottom: 1px solid black;
+}
+
+div p::before {
+  background-image: url("https://cdn-icons-png.flaticon.com/512/157/157247.png");
+  background-size: 30px 30px;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  content: "";
+  position: absolute;
+  bottom: 100px;
+  left: -30px;
+}
+
+div p::after {
+  background-image: url("https://cdn-icons-png.flaticon.com/512/157/157248.png");
+  background-size: 30px 30px;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  content: "";
+  position: absolute;
+  top: 100px;
+  right: -30px;
+}
+
+.Rucksack:hover {
+  border: 2px solid black;
+}
+
+.Fahrrad:hover {
+  background-color: black;
+  color: white;
+}

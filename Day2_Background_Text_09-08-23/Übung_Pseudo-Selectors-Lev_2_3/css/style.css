@@ -1,0 +1,29 @@
+body {
+  font-family: monospace;
+}
+h1 {
+  text-align: center;
+}
+
+h1:hover {
+  color: aqua;
+}
+
+div:nth-of-type(3) {
+  background-color: aqua;
+}
+
+div:nth-of-type(4) {
+  text-align: center;
+}
+
+a {
+  color: blueviolet;
+  border: solid;
+  border-color: aquamarine;
+  text-transform: uppercase;
+}
+
+a:hover {
+  font-size: 1.3rem;
+}

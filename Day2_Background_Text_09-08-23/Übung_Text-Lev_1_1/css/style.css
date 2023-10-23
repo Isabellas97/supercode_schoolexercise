@@ -1,0 +1,34 @@
+@font-face {
+  font-family: Isasfonts;
+  src: url(../assets/Raleway-VariableFont_wght.ttf);
+}
+
+h3 {
+  background-color: bisque;
+  text-align: center;
+  font-family: Isasfonts;
+  font-weight: 900;
+  font-size: 48px;
+}
+p {
+  color: #333;
+}
+
+li {
+  color: #777;
+  font-size: 20px;
+}
+
+.firstList {
+  text-decoration-line: overline;
+}
+
+.secondList {
+  text-decoration-line: line-through;
+  text-align: center;
+}
+
+.thirdList {
+  text-decoration: underline;
+  text-align: right;
+}

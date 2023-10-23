@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Forms</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <!-- ! Aufgabe 1_1  -->
+
+    <h2>Verdopplungs-Rechner</h2>
+    <!-- onsubmit="return false" um formular bei submit nicht neu zu laden -->
+    <div class="verdoppeln">
+      <form onsubmit="return false">
+        <input type="number" id="eingabe" />
+
+        <!-- onklick -> function wird aufgerufen -->
+        <!-- bei onclick füge ich den Funktions-Namen ein -->
+        <button type="button" onclick="multiTwo();">Verdoppel mich!</button>
+      </form>
+
+      <!-- hier kann ich mir das resultat ausgeben lassen indem ich die id in mein JS hole -->
+
+      <p id="ergebnis"></p>
+    </div>
+
+    <hr />
+    <!-- ! Aufgabe 1_2  -->
+
+    <h2>Alters-Rechner</h2>
+    <!-- onsubmit="return false" um formular bei submit nicht neu zu laden -->
+    <div>
+      <form onsubmit="return false" class="rechnerAlter">
+        <label for="jahr">Gib dein Geburtsjahr ein</label>
+        <input type="number" id="jahr" placeholder="z.B 1997" />
+
+        <!-- onklick -> function wird aufgerufen -->
+        <!-- bei onclick füge ich den Funktions-Namen ein -->
+        <button type="button" onclick="countAge();">Berechne ein Alter</button>
+      </form>
+
+      <!-- hier kann ich mir das resultat ausgeben lassen indem ich die id in mein JS hole -->
+
+      <p id="age"></p>
+    </div>
+
+    <hr />
+    <!-- ! Aufgabe 1_3  -->
+
+    <h2>Altersdifferenz-Rechner</h2>
+    <!-- onsubmit="return false" um formular bei submit nicht neu zu laden -->
+    <div class="differenzierung">
+      <form onsubmit="return false">
+        <label for="alter1">Alter 1:</label>
+        <input type="number" id="alter1" />
+        <br />
+        <label for="alter2">Alter 2:</label>
+        <input type="number" id="alter2" />
+
+        <!-- onklick -> function wird aufgerufen -->
+        <!-- bei onclick füge ich den Funktions-Namen ein -->
+        <button type="button" onclick="diffAge();">Berechne!</button>
+      </form>
+
+      <!-- hier kann ich mir das resultat ausgeben lassen indem ich die id in mein JS hole -->
+      <p>Die Differenz ist:</p>
+      <p id="differenz"></p>
+    </div>
+
+    <hr />
+
+    <!-- ! Aufgabe 1_4  -->
+
+    <div class="backgroundColor">
+      <form onsubmit="return false" class="farbwahl">
+        <h2>Farbauswahl</h2>
+        <input type="text" id="bgColor" />
+        <p>Give me a color</p>
+        <button type="submit" onclick="switchColor()">senden</button>
+      </form>
+    </div>
+
+    <!-- ! Aufgabe 2_1  -->
+
+    <h3 class="headline">Hier ist die Headline</h3>
+
+    <button onclick="change()">change Headline</button>
+    <button onclick="reset2()">reset Headline</button>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

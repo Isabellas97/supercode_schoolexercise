@@ -1,0 +1,6 @@
+section {
+  height: 100vh;
+
+  /* Das ist eine shorthand property, 3 befehle in einen*/
+  background: url("./bild.jpg") no-repeat center;
+}

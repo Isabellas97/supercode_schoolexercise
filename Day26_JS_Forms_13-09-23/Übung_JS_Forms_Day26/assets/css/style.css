@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ! Aufgabe 1.1 */
+.verdoppeln {
+  margin-bottom: 15vh;
+}
+
+/* ! Aufgabe 1.2 */
+
+.rechnerAlter {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15vh;
+}
+
+/* ! Aufgabe 1.3 */
+.differenzierung {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15vh;
+  width: 15vw;
+}
+
+div {
+  width: 40vw;
+  display: flex;
+}
+
+/* ! Aufgabe 1.4 */
+.backgroundColor {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.backgroundColor form {
+  padding: 10vh;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+
+.backgroundColor p {
+  margin: 5vh 0;
+}
+
+.farbwahl {
+  background-color: beige;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.farbwahl button {
+  width: 100%;
+  background-color: greenyellow;
+}
+
+/* ! Aufgabe 2.1 */
+
+.styling {
+  background-color: crimson;
+  color: white;
+}

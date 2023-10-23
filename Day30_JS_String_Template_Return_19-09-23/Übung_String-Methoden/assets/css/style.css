@@ -1,0 +1,9 @@
+.highlight {
+  background-color: rgb(196, 7, 130);
+}
+
+form {
+  margin: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}

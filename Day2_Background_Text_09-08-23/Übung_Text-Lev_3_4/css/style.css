@@ -1,0 +1,22 @@
+body {
+  height: 100vh;
+  background-color: bisque;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+section {
+  width: 80%;
+}
+
+h1 {
+  font-family: monospace;
+  font-size: 10rem;
+  font-weight: 700;
+  color: #353531;
+  text-shadow: 4px 4px 0px #ff0000, 8px 8px 0 #0000ff, 12px 12px 0 green,
+    16px 16px 0 pink, 20px 20px 0 red;
+  text-align: center;
+}

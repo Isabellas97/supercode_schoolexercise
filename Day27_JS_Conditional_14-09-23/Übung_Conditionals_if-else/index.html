@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conditional-Statements</title>
+  </head>
+  <body>
+    <!-- ! Aufgabe 1_1 Volljährigkeit -->
+
+    <form onsubmit="return false">
+      <label for="age">Age</label>
+      <input type="number" id="age" />
+
+      <button type="button" onclick="adult()">Überprüfen</button>
+    </form>
+
+    <p id="altersKlasse"></p>
+
+    <br />
+    <hr />
+
+    <!-- ! Aufgabe 1_3 Shisha -->
+
+    <h2>JavaScript : if else statement</h2>
+    <p>
+      Hier prüfen wir, ob das Alter größer als 18 ist oder nicht. Shisha rauchen
+      darf man nur, wenn man volljährig ist.
+    </p>
+    <form onsubmit="return false">
+      <label for="age2">Geben Sie ihr Alter ein</label>
+      <input type="number" id="age2" />
+
+      <button type="button" onclick="shisha()">Alter</button>
+    </form>
+
+    <p id="erlaubnis"></p>
+
+    <br />
+    <hr />
+
+    <!-- ! Aufgabe 2_2 Luftqualität -->
+    <section>
+      <h2>Prüfe die Luftqualität:</h2>
+      <form onsubmit="return false">
+        <input
+          type="range"
+          id="airQuali"
+          min="0"
+          max="150"
+          step="1"
+          onchange="checkAirQuality()"
+          ;
+        />
+      </form>
+      <p class="outputText1"></p>
+      <p class="outputText2"></p>
+    </section>
+
+    <br />
+    <hr />
+
+    <!-- ! Aufgabe 2_3 Differenz -->
+    <input type="text" id="differenz" />
+    <button type="submit" onclick="diff()">check diff</button>
+    <p id="result3"></p>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

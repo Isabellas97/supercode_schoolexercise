@@ -1,0 +1,95 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(../assets/fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+* {
+  font-family: Montserrat;
+}
+
+h3::first-letter {
+  font-size: 50px;
+  color: #307170;
+}
+
+h3:hover::first-letter {
+  color: #00bfff;
+}
+
+ul li::first-letter {
+  font-style: bold;
+}
+.l1::first-letter {
+  color: #00ced1;
+  font-size: 35px;
+  text-decoration: overline;
+}
+
+.li2::first-letter {
+  color: #c71585;
+  font-size: 35px;
+  text-decoration: underline;
+}
+
+.li3::first-letter {
+  color: #32cd32;
+  font-size: 35px;
+  text-decoration: line-through;
+}
+
+.li3 {
+  text-decoration: line-through;
+}
+
+section p:nth-of-type(1) {
+  color: rgb(68, 64, 75);
+  text-indent: 70px;
+}
+
+section p:nth-of-type(1)::first-line {
+  font-size: 1.5rem;
+}
+
+.red {
+  font-size: 20px;
+}
+.red::first-letter {
+  font-size: 60px;
+}
+
+.red::first-line {
+  color: #2e8b57;
+}
+
+.red:hover::first-line {
+  color: #483d8b;
+}
+.red::first-letter {
+  color: red;
+  font-size: 40px;
+}
+
+.red::first-line {
+  color: #2e8b57;
+}
+
+.red:hover::first-line {
+  color: #483d8b;
+}
+
+.red2 {
+  font-size: 15px;
+}
+
+.red2::first-line {
+  color: #2e8b57;
+}
+
+.red2::first-letter {
+  color: red;
+  font-size: 20px;
+}
+
+.red2:hover::first-line {
+  color: #483d8b;
+}
